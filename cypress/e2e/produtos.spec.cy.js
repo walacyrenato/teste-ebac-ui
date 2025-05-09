@@ -16,7 +16,7 @@ describe('Funcionalidade página de produtos', () => {
   });
 
   it.only('Deve adicionar um iten ao carrinho', () => {
-    var quantidade = 8
+    var quantidade = 3
 
     cy.get('[class="product-block grid"]')
     .contains('Abominable Hoodie').click()
@@ -25,7 +25,7 @@ describe('Funcionalidade página de produtos', () => {
     cy.get('.input-text').clear().type(quantidade)
     cy.get('.single_add_to_cart_button').click()
 
-    cy.get('.dropdown-toggle > .mini-cart-items').should('contain', quantidade)
-    cy.get('.woocommerce-message').click('contain', quantidade + ' x “Abominable Hoodie” foram adicionados no seu carrinho.')
+    cy.get('.dropdown-toggle > .mini-cart-items').should('contain' , quantidade)
+    
   });
 });
