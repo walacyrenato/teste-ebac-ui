@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/walacyrenato/teste-ebac-ui#readme",
   "devDependencies": {
+    "@faker-js/faker": "^9.7.0",
     "cypress": "^14.3.2"
   },
   "keywords": [],
